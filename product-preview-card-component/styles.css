@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --verydarkblue: hsl(212, 21%, 14%);
+    --darkgrayishblue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+ font-family: "Fraunces", serif;
+ background-color: var(--cream);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.price {
+    float: left;
+    padding-left: 20px;
+    padding-right: 120px;
+    color: var(--dark-cyan);
+    font-size: 35px;
+}
+
+.cut-price {
+    font-family: "Montserrat";
+    color: var(--darkgrayishblue);
+}
+
+.addtocart {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Montserrat";
+    padding: 1rem 2rem;
+}
+
+.card {
+    background-color: var(--white);
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.perfume {
+    padding-top: 30px;
+    padding-left: 375px;
+    letter-spacing: 3px;
+    font-size: 14px;
+    color: var(--darkgrayishblue);
+}
+
+.heading {
+    font-size: 45px;
+    padding-left: 375px;
+    font-weight: bold;
+}
+
+.product_description {
+    padding-left: 375px;
+    font-size: 14px;
+    word-spacing: 12px;
+    color: var(--darkgrayishblue);
+    font-style: "Montserrat";
+}
+
+.product_image {
+    max-width: 50%;
+    max-height: auto;
+    float: left;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
