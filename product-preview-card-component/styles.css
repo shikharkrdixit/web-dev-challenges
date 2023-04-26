@@ -10,29 +10,94 @@
     --white: hsl(0, 0%, 100%);
 }
 
-body{
- font-family: "Fraunces", serif;
- background-color: var(--cream);
- display: flex;
- align-items: center;
- justify-content: center;
+/*
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--cream);
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    border-radius: 12px;
+    height: 75vh;
+    overflow: hidden;
+    max-width: 768px;
+}
+
+.image {
+    width: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_image {
+    display: block;
+    height: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    width: 50%;
+}
+
+.heading {
+    font-family: "Fraunces", serif;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 24px 0px
+}
+
+.perfume {
+    font-family: monospace;
+    letter-spacing: 3px;
+    font-size: 14px;
+    color: var(--darkgrayishblue);
+}
+
+.product_description {
+    font-size: 16px;
+    color: var(--darkgrayishblue);
+    font-family: "Montserrat";
+    line-height: 1.5rem;
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
+    display: flex;
+    margin: 40px 0px;
+    align-items: center;
 }
 
 .price {
-    float: left;
     padding-left: 20px;
-    padding-right: 120px;
     color: var(--dark-cyan);
     font-size: 35px;
+    font-family: "Fraunces", serif;
 }
 
 .cut-price {
+    margin: auto 16px;
     font-family: "Montserrat";
-    color: var(--darkgrayishblue);
+    font-size: 14px;
+    color: gray;
 }
 
 .addtocart {
@@ -47,40 +112,112 @@ ul {
     gap: 1rem;
     font-family: "Montserrat";
     padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--cream);
 }
 
 .card {
-    background-color: var(--white);
-    max-width: 700px;
-    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    border-radius: 12px;
+    height: 75vh;
+    overflow: hidden;
+    max-width: 768px;
+}
+
+.image {
+    width: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_image {
+    display: block;
+    height: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    width: 50%;
+    font-family: "Montserrat",serif;
+}
+
+	
+.heading {
+    font-size: 30px;
+    font-weight: 100;
+    padding: 25px 0px;
 }
 
 .perfume {
-    padding-top: 30px;
-    padding-left: 375px;
+    font-family: monospace;
     letter-spacing: 3px;
     font-size: 14px;
     color: var(--darkgrayishblue);
 }
 
-.heading {
-    font-size: 45px;
-    padding-left: 375px;
-    font-weight: bold;
-}
-
 .product_description {
-    padding-left: 375px;
-    font-size: 14px;
-    word-spacing: 12px;
+    font-size: 16px;
     color: var(--darkgrayishblue);
-    font-style: "Montserrat";
+    font-family: "Montserrat";
+    line-height: 1.5rem;
 }
 
-.product_image {
-    max-width: 50%;
-    max-height: auto;
-    float: left;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+ul {
+    list-style: none;
+    display: flex;
+    margin: 40px 0px;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.price {
+    padding-left: 20px;
+    color: var(--dark-cyan);
+    font-size: 35px;
+    font-family: "Fraunces", serif;
+}
+
+.cut-price {
+    margin: auto 16px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: gray;
+}
+
+.addtocart {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Montserrat";
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
 }
