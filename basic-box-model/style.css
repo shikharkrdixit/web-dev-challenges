@@ -8,12 +8,13 @@
 .outer-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border: 5px black solid;
     width: 50vw;
     height: 20vw;
     background-color: grey;
+    
 }
 
 .upper-box {
