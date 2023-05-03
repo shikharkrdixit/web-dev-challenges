@@ -1,0 +1,11 @@
+:root {
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+.body {
+    background-color: rgb(74, 124, 167);
+}
