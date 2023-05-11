@@ -1,11 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
 :root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
     --main-bg: hsl(217, 54%, 11%);
     --card-bg: hsl(216, 50%, 16%);
     --line: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
 }
 
+* {
+    box-sizing: border-box;
+}
 
-.body {
-    background-color: rgb(74, 124, 167);
+body {
+    background-color: var(--main-bg);
+    font-family: "Outfit",sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.card {
+    
+    background-color: var(--card-bg);
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    width: 20vw;
+    color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.image-box {
+    position: relative;
+    align-self: center;
+    object-fit: cover;
+}
+
+.nft-image {
+    max-width: 100%;
+    align-self: center;
+    max-height: 40vw;
+    object-fit: cover;
+    padding: 2vh;
+    border-radius: 12%;
+    overflow: hidden;   
+}
+
+.hover-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    height: 89%;
+    width: 89%;
+    border-radius: 12%;
+    opacity: 0.5;
+    background-color: var(--cyan);
+    margin: 2vh 1.2vw;
+}
+
+.image-box:hover .hover-img{
+    display: block;
+}
+
+
+.nft-tag {
+    align-self: flex-start;
+    color: var(--white);
+    padding-left: 7%;
+    font-size: 18px;  
+}
+
+.about-tag {
+    padding-left: 7%;
+    padding-right: 5%;
+    font-size: 18px;
+    color: var(--soft-blue);
+}
+
+.offer {
+    display: flex;
+    flex-direction: row;
+    margin: 1vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    color: var(--cyan);
+} 
+
+.price {
+    margin-left: 0.5vw;
+}
+
+.timing {
+    display: flex;
+    align-items: center;
+    color: var(--soft-blue);
+}
+
+.time {
+    margin-left: 0.5vw;
+}
+
+.line {
+    display: flex;
+    border: 1px solid;
+    margin: 1vw;
+    color: var(--line);
+}
+
+.creator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ow-photo {
+    height: 40px;
+    width: 40px;
+    margin: 1vw;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+a:hover {
+    color: var(--cyan);
+}
+
+.creation-tag {
+    color: var(--soft-blue);
+    font-size: 16px;
 }
