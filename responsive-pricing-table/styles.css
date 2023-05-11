@@ -1,0 +1,34 @@
+*{
+    background-color: antiquewhite;
+}
+
+.student {
+    border: 2px solid red;
+}
+
+.personal {
+    border: 2px solid red;
+}
+
+.family {
+    border: 2px solid red;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./images/purple-city-aesthetic-mac-7a55j9djn86wjto4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-holder {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    min-height: 60vh;
+    min-width: 70vw;
+    justify-content: space-between;
+}
+
