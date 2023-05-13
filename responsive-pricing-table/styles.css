@@ -1,24 +1,12 @@
-*{
-    background-color: antiquewhite;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
 
-.student {
-    border: 2px solid red;
-}
-
-.personal {
-    border: 2px solid red;
-}
-
-.family {
-    border: 2px solid red;
-}
 body {
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(./images/purple-city-aesthetic-mac-7a55j9djn86wjto4.jpg);
+    background: url(./images/pexels-fox-1172675.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -26,9 +14,104 @@ body {
 .card-holder {
     display: flex;
     flex-direction: row;
-    border: 2px solid black;
     min-height: 60vh;
     min-width: 70vw;
     justify-content: space-between;
+    font-family: "Roboto Slab";
 }
 
+.student {
+    min-width: 18vw;
+    background-color: rgb(255 255 255 / 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 5%;
+    padding: 3vh 2vw;
+    color:ghostwhite;
+}
+
+.audience {
+    font-size: 3.5vh;
+}
+
+.pricing {
+    display: block;
+}
+
+.prices {
+    font-size: 6vh;
+    font-weight: bold;
+    margin-bottom: 0vh;
+}
+
+.duration {
+    font-size: 2vh;
+    font-weight: lighter;
+}
+
+.saving {
+    font-weight: bold;
+    font-size: 2vh;
+    margin-bottom: 10vh;
+}
+
+.line {
+    border: 0.1vh solid wheat;
+}
+
+.features {
+    padding-left: 1vw;
+    justify-content: space-around;
+    padding-bottom: 3vh;
+    font-weight: bold;
+}
+
+li {
+    padding: 0.5vh;
+    font-size: 1.9vh;
+}
+
+.buynow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 100%;
+    padding: 1.5vh;
+    border-radius: 2vw;
+    font-size: 1.5vh;
+    color: white;
+    background-color: rgba(21, 23, 24, 0.7);
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover {
+    width: 100%;
+    padding: 1.5vh;
+    border-radius: 2vw;
+    font-size: 1.5vh;
+    color: white;
+    background-color: rgba(35, 50, 25, 0.75);
+    border: 0;
+    cursor: pointer;
+}
+
+.personal {
+    min-width: 18vw;
+    background-color: rgb(255 255 255 / 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 5%;
+    padding: 3vh 2vw;
+    color:ghostwhite;
+}
+
+.family {
+    min-width: 18vw;
+    background-color: rgb(255 255 255 / 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 5%;
+    padding: 3vh 2vw;
+    color:ghostwhite;
+}
